@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1296 1728" style="enable-background:new 0 0 1296 1728;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#DB0A2D;stroke-width:11;stroke-miterlimit:10;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<circle class="st0" cx="642.2" cy="795" r="612"/>
+		<radialGradient id="SVGID_1_" cx="642.1529" cy="795.2974" r="596.2474" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#DB0A2D"/>
+			<stop  offset="0.4021" style="stop-color:#D90A2D"/>
+			<stop  offset="0.6124" style="stop-color:#D1082F"/>
+			<stop  offset="0.7782" style="stop-color:#C30631"/>
+			<stop  offset="0.92" style="stop-color:#B10334"/>
+			<stop  offset="1" style="stop-color:#A20036"/>
+		</radialGradient>
+		<circle class="st1" cx="642.2" cy="795.3" r="596.2"/>
+	</g>
+	<g>
+		<g>
+			<g>
+				<path class="st2" d="M526.3,1227.2c15.6-105.8,92.6-94.7,171.1-94.9c-45.6-72.9-85.1-136.2-128.1-205
+					c-52.5,83.2-105.5,156.1-146.3,235.2c-35.4,75-76.8,77.7-147.6,57.4c48.7-77.7,96-152.9,143.2-228.3
+					C537.6,801.7,658,612.7,774.3,421.3c30.6-50.3,62.6-58.7,115.4-39.6c191.9,69.5,313.2,270,282.5,472.9
+					c-31.8,209.8-202.9,365.9-410.5,372.2C684.1,1229.2,606.3,1227.2,526.3,1227.2z M982.9,1028.1c85.1-75.2,121.1-198.4,91-316.8
+					c-29.7-116.9-102.5-196.1-218.2-241.8C821,524.8,788.2,575,758.2,626.8c-6.3,10.8-7.9,31.3-1.8,41.2
+					C830.7,788.5,906.9,907.9,982.9,1028.1z M911.1,1090.1C836.1,970.5,764.6,856.5,691.5,740c-72.2,93.5-72,93.4-17.1,179.9
+					c35.4,55.7,72.9,110.3,104.3,168.2c20.3,37.4,43.7,44.5,79.3,27.2C873.6,1107.7,889.3,1100.4,911.1,1090.1z"/>
+				<path class="st2" d="M346.6,360c99.2,0,196.1-2.6,292.8,1.1c45.3,1.7,55.8,40.4,26.3,87.6c-85.6,137.1-172.1,273.7-258.4,410.4
+					c-17.4,27.5-35.1,54.8-60.8,94.8C346.6,748,346.6,557.1,346.6,360z M410.5,414.2c0,105.8,0,206.8,0,337.8
+					c91.5-145.5,146.3-232.7,212.4-337.8C540.3,414.2,477.4,414.2,410.5,414.2z"/>
+			</g>
+			<line class="st3" x1="275.5" y1="359.9" x2="275.5" y2="1230.7"/>
+			<polygon class="st2" points="345.1,1230.5 273.5,1230.8 273.5,1216.3 345.4,1216.3 			"/>
+		</g>
+		<line class="st4" x1="274.6" y1="364.4" x2="348.1" y2="364.4"/>
+	</g>
+</g>
+</svg>
