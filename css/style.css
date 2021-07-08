@@ -87,7 +87,7 @@ a {
 }
 
 .nav-link {
-    color: rgb(245, 241, 241);
+    color: rgb(192, 189, 189);
 }
 
 .nav-link:hover {
@@ -131,8 +131,7 @@ a {
 .profile {
     text-align: center;
     color: rgb(168, 166, 166);
-    font-weight: 300;
-    padding-top: 10%;
+    font-weight: 300;    
 }
 
 .heading {
@@ -149,24 +148,32 @@ a {
 }
 
 .progress-section
-{
-    margin-top: 10%;
+{    
+    margin-top: 4%;
     text-align: left;
-}
-.progress
-{
-margin-bottom: 7%;
+    
 }
 .bar
 {
     padding: 0;
-    width: 95%;    
+    width: 90%;       
     border: 2px solid #fff;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%; 
+    margin-left: auto;  
+    margin-right: auto;
+    
 }
+.bar:hover
+{
+    box-shadow: 4px 4px 7px rgb(0, 0, 0);    
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .bar-fill
 {   
-    height: 2rem; 
+    height: 100%;
     background-color: rgb(0, 97, 100);
     display: inline-block;
     text-align: center; 
@@ -176,7 +183,7 @@ margin-bottom: 7%;
 {
     display: inline;
     color: azure;
-    font-weight: 500;
+    font-weight: 500;   
     
 }
 .comb-container
@@ -202,3 +209,4 @@ margin-bottom: 7%;
     margin-left: -5%;
     margin-top: 19%;
 }
+
