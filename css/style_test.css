@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -12,18 +11,19 @@ body {
     background-color: rgb(42, 44, 44);
 
 }
+
 .element {
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;            
+    overflow-x: hidden;
 }
 
 canvas {
-position:absolute;
-top:0;
-left:0;        
-width: 100%;
-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -123,7 +123,6 @@ a {
     position: sticky;
     top: 7%;
     z-index: 99;
-
 }
 
 .navbar {
@@ -134,11 +133,10 @@ a {
 .profile {
     text-align: center;
     color: rgb(168, 166, 166);
-    font-weight: 300;    
+    font-weight: 300;
 }
 
 .heading {
-    color: rgb(168, 166, 166);
     font-size: 50px;
     margin-bottom: 0;
 }
@@ -151,55 +149,59 @@ a {
     padding-top: 5%;
 }
 
-#skills-section
-{
+#skills-section {
     min-height: 110vh;
 }
 
-.progress-section
-{    
-    margin-top: 7%;
+.progress-section {
+    margin-top: 4%;
     text-align: left;
-    
-}
-.bar
-{
-    padding: 0;
-    width: 90%;       
-    border: 2px solid #fff;
-    margin-bottom: 2.5%; 
-    margin-left: auto;  
-    margin-right: auto;
-    
-}
-.bar:hover
-{
-    box-shadow: 4px 4px 7px rgb(0, 0, 0);    
-    
+
 }
 
-.bar-fill
-{   
+.bar {
+    padding: 0;
+    width: 90%;
+    border: 2px solid #fff;
+    margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.bar:hover {
+    box-shadow: 4px 4px 7px rgb(0, 0, 0);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.025);
+}
+
+.bar-fill {
     height: 100%;
     background-color: rgb(0, 97, 100);
     display: inline-block;
-    text-align: center; 
-    padding-top: 5px;  
+    text-align: center;
+    padding-top: 5px;
 }
-.bar-text
-{
+
+.bar-text {
     display: inline;
     color: azure;
-    font-weight: 500;   
-    
+    font-weight: 500;
+
 }
-.comb-container
-{
-    padding: 5% 0 0 0;    
+
+.comb-container {
+    padding: 0;
     margin-top: 0%;
     position: relative;
 }
 
+.hex-img{
+    width: 50%;
+    height: 50%;
+    margin: auto;   
+  }
   
   .hexagon-gallery {
     margin: auto;
@@ -225,82 +227,50 @@ a {
     
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    transform: scale(1.025);    
+    transform: scale(1.025);
 }
-.hex-img{
-    width: 50%;
-    height: 50%;
-    margin: auto;   
-  }
 
-.hex-img:hover
-{
-    animation: bounce;
-    animation-duration: 0.5s;
-
-}
   
   .hex:first-child {
     grid-row-start: 1;
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 2;
   }
   
   .hex:nth-child(2) {
     grid-row-start: 1;
-    grid-column: 5 / span 2;
+    grid-column: 4 / span 2;
   }
   
   .hex:nth-child(3) {
-    grid-row-start: 2;
-    grid-column: 2 / span 2;
+    grid-row-start: 1;
+    grid-column: 6 / span 2;
   }
   
   .hex:nth-child(4) {
     grid-row-start: 3;
-    grid-column: 3 / span 2;
-  }
-  .hex:nth-child(7) {
-    grid-row-start: 3;
-    grid-column: 5 / span 2;
+    grid-column: 4 / span 2;
   }
   
   .hex:nth-child(5) {
     grid-row-start: 2;
-    grid-column: 4 / span 2;
+    grid-column: 3 / span 2;
   }
   
   .hex:nth-child(6) {
     grid-row-start: 2;
-    grid-column: 6 / span 2;
+    grid-column: 5 / span 2;
   }
+  
+  
 
-  #portfolio-section
-  {
+.hobbies {
+    position: absolute;
+    margin-top: -28%;
+    margin-left: 16%;
+    transform: rotate(-30deg);
+}
 
-    height: 110vh;
-    text-align: center;
-  }
-  .portfolio-container
-  {
-      padding-top: 5%;
-  }  
-  .card
-  {
-      height: 25rem;
-      width: 85%;
-      padding:0.8% 0 0.8% 0 ;
-      margin: auto;
-      background: linear-gradient(to right, #424242, rgb(0, 97, 100));      
-      vertical-align: middle;      
-  }
-  .card-body
-  {    
-    width: 98%; 
-    margin: auto;    
-    border-radius: 5px;
-   display: flex;
-  }
- .card-body:nth-child(1){    
-    background-image: url(/assets/images/triptoe-background.PNG);
-    background-size: cover;
-  }
+.hobbies-heading {
+    height: 16rem;
+
+}
