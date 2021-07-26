@@ -10,7 +10,7 @@
       bgCtx = background.getContext("2d"),
       width = window.innerWidth,
       height = 550;
-    //   height = document.body.offsetHeight;
+    // height = document.body.offsetHeight-4000;
 
   (height < 400) ? height = 400 : height;
 
