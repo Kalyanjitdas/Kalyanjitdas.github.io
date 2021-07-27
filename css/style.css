@@ -30,9 +30,9 @@ canvas {
   height: 100%;
 
 }
-
 .myname {
   position: relative;
+  display:block;  
   text-align: center;
   z-index: 1;
   padding-top: 17%;
@@ -44,11 +44,13 @@ canvas {
   font-weight: bolder;
   color: #DCDBDB;
 }
+
 .heading {
   color: #DCDBDB;
   font-size: 50px;
   margin-bottom: 0;
 }
+
 .highlight {
   color: #FF9839;
 }
@@ -144,25 +146,26 @@ a {
   margin-right: 30px;
 }
 
-.about-me {   
+.about-me {
   padding-top: 4%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.about-me>div {  
+.about-me>div {
   height: 90%;
   margin: 10px;
   text-align: center;
 }
-.about-me-description
-{
+
+.about-me-description {
   width: 50%;
 }
-.about-me-image
-{
+
+.about-me-image {
   width: 45%;
 }
+
 .about-me-cards {
   justify-content: center;
   flex-direction: row;
@@ -178,8 +181,8 @@ a {
   margin-left: 15px;
 
 }
-.profile-image
-{
+
+.profile-image {
   height: 100%;
   width: 100%;
 }
@@ -204,13 +207,41 @@ a {
     width: 100%;
     height: 100%;
   }
-  
-  .about-me-card-body
-  {
+
+  .about-me-card-body {
     width: 95%;
     margin: 0 0 10px 0;
   }
-  
+}
+
+@media only screen and (max-width:320px) 
+{
+  .myname {
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+  }
+
+  .navbar-toggler {
+    margin-bottom: 10px;
+  }
+
+  .navbar-dark .navbar-toggler {
+    color: #000;
+    border: none;
+  }
+
+  .about-me>div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-me-card-body {
+    width: 95%;
+    margin: 0 0 10px 0;
+  }
+}
 
 
 
@@ -484,13 +515,4 @@ a {
   border-bottom: 5px solid rgb(119, 119, 119, 0.5);
   border-left: 5px solid rgb(119, 119, 119, 0.5);
   border-right: 5px solid rgb(119, 119, 119, 0.5);
-}
-
-@media only screen and (min-width: 768px) {
-  .element {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-
 }
