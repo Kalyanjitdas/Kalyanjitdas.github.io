@@ -220,10 +220,11 @@ a {
 @media only screen and (max-width:320px) 
 {
   .myname {
+    display: inline-block;
     top: 30%;
+    margin-right: auto;   
     margin-left: auto;
-    margin-right: auto;
-    width: 96%;
+    width: 100%;
   }
 
   .navbar-toggler {
@@ -249,9 +250,9 @@ a {
 {
   .myname {
     top: 30%;
-    margin-left: -19%;
+    margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
   }
 
   .navbar-toggler {
