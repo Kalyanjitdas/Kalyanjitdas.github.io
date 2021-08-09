@@ -223,12 +223,6 @@ a {
   transition: 150ms ease-out;
 }
 
-/* .grad-background
-{
-
- background: linear-gradient(180deg, rgba(42,44,44,1) 0%, rgba(36,40,40,1) 40%, rgba(0,0,0,1) 100%); 
-} */
-
 .skill_section {
   height: 100vh;
   display: flex;
@@ -338,25 +332,24 @@ a {
 .graph-container>.bar {
   height: 250px;
   width: 50px;
-  background-color: #247a71;  
+  background-color: #247a71;
   justify-content: center;
-  position: relative;  
+  position: relative;
   display: flex;
-  align-items: flex-end;  
-  box-shadow: 5px  5px 10px rgb(20, 20, 20);
+  align-items: flex-end;
+  box-shadow: 5px 5px 10px rgb(20, 20, 20);
 }
 
-.graph-container>.bar>.bar-box> p{   
-  display: inline;  
-  color: #252627;  
+.graph-container>.bar>.bar-box>p {
+  display: inline;
+  color: #252627;
   /* color: #DCDBDB; */
-  font-weight: bolder;  
-  font-size: 1.2rem;  
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
-.bar-box
-{
-  transform: rotate(-90deg); 
+.bar-box {
+  transform: rotate(-90deg);
   margin-bottom: 50px;
 }
 
@@ -389,22 +382,91 @@ a {
 }
 
 .bar:nth-child(8) {
-  height: 30%;  
+  height: 30%;
 }
 
-.fa, .fab, .fad, .fal, .far, .fas {
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
   display: inline !important;
-  }
+}
 
 .fa-php {
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-.portfolio_section
-{
+.portfolio_section {
   height: 100vh;
-  
+}
+
+.portfolio_section>h1 {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.portfolio_section>.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.portfolio_section>.project-container>.project-card {
+  height: 350px;
+  width: 300px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(15, 15, 15);
+  transition: 200ms;
+  position: relative;
+}
+.project-card:hover
+{
+  transform: scale(1.1); 
+  opacity: 0.6; 
+  transition: 200ms;
+  cursor: pointer;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  /* background-color: #3aa57e; */
+  background-color:  #f8b538;
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 30px;
+  opacity: 1;
+}
+.portfolio_section>.project-container>.project-card>.middle>a
+{
+text-decoration: none;
+} 
+.project-card:hover .middle {
+  opacity: 1;
+}
+.project-card:nth-child(1) {
+  background-image: url(/assets/images/portfolio-website-ss-3.png);
+  background-size: cover;
+}
+.project-card:nth-child(2) {
+  background-image: url(/assets/images/triptoe-image.PNG);
+  background-size: cover;
 }
 
 /* ================= media query===============================================================
@@ -455,7 +517,7 @@ a {
 
   .skill-containers {
     width: 100vh;
-    height: fit-content;    
+    height: fit-content;
   }
 
   .graph-container {
@@ -468,7 +530,8 @@ a {
     justify-content: space-evenly;
     align-items: flex-end;
   }
-  .graph-container>.bar {    
+
+  .graph-container>.bar {
     width: 30px;
     background-color: #247a71;
     color: #DCDBDB;
@@ -477,44 +540,50 @@ a {
     position: relative;
     box-shadow: 5px 5px 10px rgb(28, 29, 29);
   }
+
   .bar:nth-child(1) {
     height: 90%;
   }
-  
+
   .bar:nth-child(2) {
     height: 80%;
   }
-  
+
   .bar:nth-child(3) {
     height: 50%;
   }
-  
+
   .bar:nth-child(4) {
     height: 80%;
   }
-  
+
   .bar:nth-child(5) {
     height: 60%;
   }
-  
+
   .bar:nth-child(6) {
     height: 70%;
   }
-  
+
   .bar:nth-child(7) {
     height: 40%;
   }
-  
+
   .bar:nth-child(8) {
     height: fit-content;
     padding-top: 12%;
   }
-  
-  .fa, .fab, .fad, .fal, .far, .fas {
-  display: inline !important;
+
+  .fa,
+  .fab,
+  .fad,
+  .fal,
+  .far,
+  .fas {
+    display: inline !important;
   }
 
-  .graph-container>.bar> p {
+  .graph-container>.bar>p {
     transform: rotate(-90deg);
     width: fit-content;
     display: block;
@@ -522,10 +591,11 @@ a {
     font-weight: bolder;
     /* font-size: 10px; */
   }
-  .heading-for-600px
-  {
+
+  .heading-for-600px {
     font-size: 40px;
   }
+
   .hexagon-gallery {
     margin: auto;
     /* max-width: 50%; */
@@ -536,5 +606,8 @@ a {
     padding-bottom: 50px;
   }
 
+  .portfolio_section>.project-container>.project-card {
+    margin-bottom: 20px;
+  }
 
 }
