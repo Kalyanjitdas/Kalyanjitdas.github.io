@@ -1,30 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style_test.css">
-    <title>Kalyanjit.test</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fddc5106ec.js" crossorigin="anonymous"></script>
+
+    <!-- google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- fav-icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\favicons\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\favicons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\favicons\favicon-16x16.png">
+    <link rel="manifest" href="assets\favicons\site.webmanifest">
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <title>kalyanjit.das</title>
 </head>
+
 <body>
-    <section id="landing">
+    <section class="landing-section">
         <div class="element" id="home-section">
             <canvas id="bgCanvas"></canvas>
             <div class="myname">
-                <h1 class="mynametop">Hello, I'm <span class="highlight"> Kalyanjit Das.</span></h1>
-                <h1>I'm a full-stack Web Developer.</h1>
+                <h1 class="mynametop"> I'm <span class="highlight"> Kalyanjit Das.</span></h1>
+                <h1 id="app"></h1>
                 <a href="#nav-section">
-                    <button class="btn btn-canvas">
-                        <p class="texttype1 canvas-btn-text">Take a look at my work! &nbsp;
-                            <i class="fas fa-arrow-right arrow"></i>
-                        </p>
-                    </button>
+                    <button class="btn canvasbtn">Take a look at my Work! &nbsp;<i
+                            class="fas fa-arrow-right arrow"></i></button>
                 </a>
             </div>
         </div>
+
     </section>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav-section">
+        <div class="container-fluid nav-body">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
+                    <a class="navbar-brand" href="#">
+                        <img src="/assets/images/kalyanjit-logo3.png" class="navbar-brandd" alt="navbar-brand"
+                            width="40" height="40">
+                    </a>
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="#home-section">
+                            <p class="nav-btnn">Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me-section">
+                            <p class="nav-btnn">About</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skill-section">
+                            <p class="nav-btnn">Skills</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio-section">
+                            <p class="nav-btnn">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <p class="nav-btnn">Blog</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <p class="nav-btnn">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="about-section">
+        <div class="conatiner-fluid">
+            <hr class="hr hr-below-nav">
+            <div class="content-container" id="about-me-section">
+                <div class="about-content-box about-content-box-description">
+                    <p class="heading">Who is <span class="highlight profile-highlight">Kalyanjit!</span>
+                        <hr class="hr hr-below-about-title" style="width: 40%;">
+                        <br>
+                        <p data-aos="fade-left" class="texttype1">
+                            I'm a student Of Chandigarh University located at Mohali, Punjab.
+                            Currently persuing Bachelor of Technology in Computer Science. A part from this I'm a
+                            Self-Taught Developer.
+                            I am a certified Android Developer and a Full Stack Web Developer too.
+                            I have extensive experience in creating modern, creative and responsive Android and Web
+                            Application from scratch.
+                        </p>
+                        <br><br>
+                        <div class="about-me-card-container">
+                            <div class="about-me-cards">
+                                <P class="texttype1">
+                                    <span data-aos="fade-left" class="highlight about-me-cards-title"><i
+                                            class="fas fa-drafting-compass"></i>&nbsp;Designing</span><br><br>
+
+                                    I breathe design and creativity. I am also passionate about coding too. My knowledge
+                                    and
+                                    experience consists of research, Designing, Development, testing and Deployment.I
+                                    have
+                                    serious passion for UI effects, creating intuitive and dynamic user experiences.
+                                </P>
+                            </div>
+                            <div class="about-me-cards">
+                                <p class="texttype1">
+                                    <span data-aos="fade-left" class="highlight about-me-cards-title ">&nbsp;<i
+                                            class="fas fa-cogs"></i>&nbsp;Specialisation</span><br><br>
+
+                                    I have specialisation in Front-end development and User experience . I have obtained
+                                    an
+                                    eye for
+                                    detail and appreciation for design, knowledge of integrating the UI and developing
+                                    server-side.I
+                                    have vast experience of knowing, how to efficiently manage projects and team
+                                    successfully.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="about-content-box">
+
+                    <div class="my-image">
+                        <img src="/assets/images/kalyanjit-portfolio-1.png" alt="My Image">
+                        <a href="/assets/my resume/resume-final.pdf" download="Kalyanjit's Resume">
+                            <div class="my-resume">
+                                <p class="texttype1">Download My Resume</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="grad-background">
+        <section class="skill_section" id="Skill-section">
+            
+            <div class="skill-containers">
+                <p data-aos="fade-right" class="heading heading-for-600px">What are my <span
+                    class="highlight profile-highlight">Skills!</span>
+                </p>
+                <div class="graph-container">                    
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fab fa-html5"></i>&nbsp;Html</p></div></div>
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fas fa-file-code"></i>&nbsp;Css</p></div></div>
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fab fa-js-square"></i>&nbsp;JavaScript</p></div></div>
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fab fa-bootstrap"></i>&nbsp;Bootstrap</p></div></div>
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fab fa-php"></i>&nbsp;Php</p></div></div>
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fas fa-database"></i>&nbsp;Mysql</p></div></div>
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fab fa-korvue"></i>&nbsp;Kotlin</p></div></div>
+                    <div class="bar"><div class="bar-box"><p><i class="bar-icon fas fa-fire"></i>&nbsp;Firebase</p></div></div>
+                </div>
+
+            </div>
+            <div class="skill-containers">
+                <section class="hexagon-gallery">
+                    <div class="hex"><img class="hex-img" src="/assets/images/photshop.svg" alt="photoshop image"></div>
+                    <div class="hex"><img class="hex-img" src="/assets/images/illustrator.svg" alt="illustrator image">
+                    </div>
+                    <div class="hex"><img class="hex-img" src="/assets/images/indesign-cc.svg" alt="indesign image">
+                    </div>
+                    <div class="hex"><img class="hex-img" src="/assets/images/guitar.svg" alt="Guitar image">
+                    </div>
+                    <div class="hex"><img class="hex-img" src="/assets/images/camera.svg" alt="Camera image">
+                    </div>
+                    <div class="hex"><img class="hex-img" src="/assets/images/canva-seeklogo.com.svg" alt="canva image">
+                    </div>
+                    <div class="hex"><img class="hex-img" src="/assets/images/painting1.svg" alt="canva image">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="portfolio_section" id="portfolio-section">
+            
+        </section>
+    </div>
 
     <script src="/js/canvas.js"></script>
+    <script>
+        var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hello World!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I am a full-stack <strong>Web developer</strong>')
+    .pauseFor(2500)
+    .deleteChars(13)
+    .typeString('<strong>Android Developer</strong>')
+    .pauseFor(2500)
+    .start();
+    </script>
 </body>
+
 </html>
