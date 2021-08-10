@@ -79,8 +79,8 @@ canvas {
 }
 
 
-.btn:hover .arrow {
-  transform: rotate(90deg);
+.canvasbtn:hover #arrow {
+  transform: rotate(40deg) ;
   transition: 0.5s;
 }
 
@@ -401,6 +401,7 @@ a {
 
 .portfolio_section {
   height: 100vh;
+  padding-top: 5%;
 }
 
 .portfolio_section>h1 {
@@ -419,54 +420,125 @@ a {
 .portfolio_section>.project-container>.project-card {
   height: 350px;
   width: 300px;
-  border: 1px solid #000;
+  border: 1px solid var(--copper);
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgb(15, 15, 15);
   transition: 200ms;
   position: relative;
 }
-.project-card:hover
+.portfolio_section>.project-container>.project-card>img
 {
-  transform: scale(1.1); 
-  opacity: 0.6; 
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+} 
+.portfolio_section>.project-container>.project-card>.after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+  text-align: center;
+  padding-top: 40%;
+}
+.portfolio_section>.project-container>.project-card>.after>a>p
+{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FF9839;
+  border: 2px solid #fff;
+  color: #232424;  
+  text-shadow: 2px 2px 20px #000;
+  font-weight: 700;
+} 
+.portfolio_section>.project-container>.project-card:hover
+{
+  transform: scale(1.1);
+}
+.portfolio_section>.project-container>.project-card:hover .after
+{   
   transition: 200ms;
   cursor: pointer;
+  display: block;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, .6);
 }
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+
+.Contact_section
+{
+  height: 100vh;
+  padding-top: 5%;
+  background-color: #252627; 
+  display: flex;  
+  justify-content: space-evenly;
+}
+.Contact_section>.contact-container
+{
+  width: 45%;
+  height: 90%;
+  padding-top: 10%;
   text-align: center;
 }
-.text {
-  /* background-color: #3aa57e; */
-  background-color:  #f8b538;
-  border: 2px solid rgb(241, 241, 241);
-  border-radius: 5px;
-  color: #000;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 8px 30px;
-  opacity: 1;
-}
-.portfolio_section>.project-container>.project-card>.middle>a
+.contact-quote
 {
-text-decoration: none;
-} 
-.project-card:hover .middle {
-  opacity: 1;
+  color: #DCDBDB;
 }
-.project-card:nth-child(1) {
-  background-image: url(/assets/images/portfolio-website-ss-3.png);
-  background-size: cover;
+
+.contact-card
+{
+  height: fit-content;
+  width: 95%;
+  margin: auto;
+  background-color: rgb(29, 32, 32);
+  border: 1px solid var(--copper);
+  border-radius: 10px;
+  padding-bottom: 17px;
+  box-shadow: 2px 2px 30px rgb(17, 17, 17);
 }
-.project-card:nth-child(2) {
-  background-image: url(/assets/images/triptoe-image.PNG);
-  background-size: cover;
+form{
+  padding-top: 10%;
+}
+input
+{  
+  display: inline-block;
+  margin-bottom: 5% !important;
+  border-radius: 5px;
+  width: 92%;
+  background-color: transparent;
+  color: var(--copper);
+  border-right: none;
+  
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+textarea
+{
+  width: 92%;
+  /* height: 50%; */
+  border-radius: 5px; 
+  background-color: transparent;
+  color: #DCDBDB;
+}
+.form-btn
+{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-color: #FF9839;
+  
+}
+.form-btn>.fas
+{
+color: rgb(29, 32, 32);
+margin-bottom: 0;
+font-size: 22px;
+margin-left: -4px;
 }
 
 /* ================= media query===============================================================
@@ -605,9 +677,27 @@ text-decoration: none;
     grid-gap: 14px;
     padding-bottom: 50px;
   }
-
+  .portfolio_section {
+    height: fit-content;
+    padding-top: 5%;
+  }
   .portfolio_section>.project-container>.project-card {
     margin-bottom: 20px;
   }
 
+  .Contact_section
+{
+ display: flex;
+ flex-direction: column;
+}
+.Contact_section>.contact-container
+{
+  width: 100%;
+
+}
+.contact-container:nth-child(1)
+{
+  height: 300px;
+  padding: 20px;
+}
 }

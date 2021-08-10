@@ -43,8 +43,8 @@
                 <h1 class="mynametop"> I'm <span class="highlight"> Kalyanjit Das.</span></h1>
                 <h1 id="app"></h1>
                 <a href="#nav-section">
-                    <button class="btn canvasbtn">Take a look at my Work! &nbsp;<i
-                            class="fas fa-arrow-right arrow"></i></button>
+                    <button class="btn canvasbtn">Take a look at my Work! &nbsp;
+                        <i class="fas fa-arrow-right" id="arrow"></i></button>
                 </a>
             </div>
         </div>
@@ -83,13 +83,13 @@
                             <p class="nav-btnn">Portfolio</p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">
                             <p class="nav-btnn">Blog</p>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#contact-section">
                             <p class="nav-btnn">Contact</p>
                         </a>
                     </li>
@@ -234,17 +234,45 @@
 
             <div class="project-container">
                 <div class="project-card">
-                    <div class="middle">
-                        <a href="#"><div class="text">Visit Site</div></a>
+                    <img src="/assets/images/portfolio-website-ss-3.png" />
+                    <div class="after">
+                        <a href="#home-section"><p>Take a tour</p></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="middle">
-                    <a href="http://triptoe.epizy.com/" target="blank"><div class="text">Visit Site</div></a>
-                    </div>
+                    <img src="/assets/images/triptoe-image.PNG" />
+                    <div class="after">
+                        <a href="http://triptoe.epizy.com/" target="blank"><p>Take a tour</p></a>
+                    </div>                    
                 </div>
-                <div class="project-card"></div>
+                <div class="project-card">
+                    <img src="/assets/images/coming soon.png" />
+                    <div class="after">
+                        <a href="#" ><p>Take a tour</p></a>
+                    </div> 
+                </div>
             </div>
+        </section>
+
+        <section class="Contact_section" id="contact-section">
+            <div class="contact-container">
+                <h1 class="heading heading-for-600px"> Hey! Be my <span class="highlight">online Bff.</span></h1>
+            <br><p class="contact-quote">I would love to hear from you, so whether you need a quote, have a question or just want to say hello, please feel free to drop me a line.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <form action="index.html">
+                        <input type="text" id="fname" name="fname" placeholder="Your Name">
+                        <input type="text" name="email" id="email" placeholder="Your Email">
+                        <textarea name="message" id="message"  rows="10" placeholder="Your Message"></textarea>
+                            <br>
+                        <button class="form-btn" name="submit"><i class="fas fa-paper-plane"></i></button>
+
+                    </form>
+                </div>
+            </div>            
+       
+           
         </section>
     </div>
 
