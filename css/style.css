@@ -628,6 +628,7 @@ color: var(--copper);
   .landing-section
   {
     height: fit-content;
+    background-color: #000;
   }
   .content-container {
     flex-direction: column-reverse;
