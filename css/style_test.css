@@ -3,7 +3,6 @@
   --basic-text-color: #DCDBDB;
   --text-dark: #2a2c2c;
 }
-
 .texttype1 {
   color: var(--basic-text-color);
 }
@@ -65,7 +64,7 @@ canvas {
   color: #FF9839;
 }
 
-.canvasbtn {
+.canvasbtn { 
   border: 1px solid var(--basic-text-color) !important;
   color: var(--copper) !important;
 }
@@ -74,13 +73,14 @@ canvas {
 
   background-color: var(--copper) !important;
   color: var(--text-dark) !important;
-  border: 3px solid var(--basic-text-color) !important;
+  border: 2px solid var(--basic-text-color) !important;
   font-weight: 600;
 }
 
 
-.canvasbtn:hover #arrow {
-  transform: rotate(40deg) ;
+.canvasbtn:hover> .fas {
+  display: inline-block !important;
+  transform: rotate(90deg) ;
   transition: 0.5s;
 }
 
@@ -126,7 +126,9 @@ a {
 .nav-link:hover {
   color: var(--copper) !important;
 }
-
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+color: #FF9839 !important;
+}
 .nav-btnn {
   margin-bottom: 0;
   margin-top: 3px;
@@ -480,8 +482,9 @@ a {
 {
   width: 45%;
   height: 90%;
-  padding-top: 10%;
+  padding-top: 5%;
   text-align: center;
+  overflow: hidden;
 }
 .contact-quote
 {
@@ -541,6 +544,71 @@ font-size: 22px;
 margin-left: -4px;
 }
 
+footer{
+  height: 30vh;
+  display: flex;  
+}
+
+.icon-container
+{
+height: fit-content;
+width: fit-content;
+margin: auto;
+}
+.icon-box
+{
+  display: inline-block;  
+  height: 50px;
+  width: 50px;
+  background-color: #252627;
+  border: 2px solid #247a71; 
+  overflow: hidden; 
+}
+.icon-box> a
+{
+  text-decoration: none;
+  font-size: 30px;
+  color: #247a71;
+  display: inline-block;
+  margin-left: 9px;  
+}
+
+.icon-box:hover> a
+{
+  display: inline-block;  
+  animation: backInDown; 
+  animation-duration: 300ms; 
+ 
+}
+.icon-box:hover
+{  
+   background-color: #247a71;
+   color: #252627;
+}
+.icon-box:hover .fab
+{     
+  color: #DCDBDB;
+}
+.up-icon
+{  
+  margin-left: 5px;
+}
+.icon-box:hover> a .up-icon
+{
+  display: inline-block;  
+  animation: backInUp !important;
+  animation-duration: 300ms; 
+  color: #DCDBDB;
+  margin-left: 5px;
+}
+.icon-container>p{
+  margin-left: -7px;  
+  padding-top: 50px;
+  position: absolute;
+}
+.icon-container>p>span{
+color: var(--copper);
+}
 /* ================= media query===============================================================
 =============================================================================================== */
 
@@ -687,13 +755,18 @@ margin-left: -4px;
 
   .Contact_section
 {
+  height: fit-content;
  display: flex;
  flex-direction: column;
+ margin-bottom: 10px;
 }
 .Contact_section>.contact-container
 {
   width: 100%;
-
+}
+.Contact_section> .contact-container> .contact-card
+{
+  margin-bottom: 40px;
 }
 .contact-container:nth-child(1)
 {
