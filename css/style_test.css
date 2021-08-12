@@ -14,7 +14,9 @@ body {
   overflow-x: hidden;
   background-color: #2a2c2c !important;
 }
-
+html,body{
+  overflow-x: hidden;
+}
 .conatiner-fluid {
   margin: 0%;
   padding: 0%;
@@ -614,6 +616,9 @@ color: var(--copper);
 
 
 @media only screen and (max-width: 600px) {
+  html,body{
+    overflow-x: hidden;
+}
   .myname {
 
     padding-top: 60%;
