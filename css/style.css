@@ -627,12 +627,13 @@ color: var(--copper);
 
   .landing-section
   {
-    height: fit-content;
-    background-color: #000 !important;
+    height: fit-content !important;
+    
   }
   .element
   {
-    background-color: #000 !important;
+    height: fit-content !important;
+    
   }
   .content-container {
     flex-direction: column-reverse;
