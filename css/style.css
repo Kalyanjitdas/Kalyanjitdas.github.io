@@ -625,6 +625,10 @@ color: var(--copper);
     padding-top: 60%;
   }
 
+  .landing-section
+  {
+    height: fit-content;
+  }
   .content-container {
     flex-direction: column-reverse;
     height: fit-content;
