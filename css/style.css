@@ -624,7 +624,10 @@ color: var(--copper);
 
     padding-top: 60%;
   }
-  
+  .navbar
+  {
+    display: none;
+  }
   .content-container {
     flex-direction: column-reverse;
     height: fit-content;
